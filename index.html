@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="javascript.js" defer></script>
-    <link rel = "stylesheet" href="styles.css">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class ="score">
-        <p>Score</p>
-        <p class ="human_score">0</p>
-        <p class = "robot_score">0</p>
-    </div>
-    <div class="buttons">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="choices">
+            <button class="choice" id="rock">Rock</button>
+            <button class="choice" id="paper">Paper</button>
+            <button class="choice" id="scissors">Scissors</button>
+        </div>
+        <div class="result">
+            <h2 id="resultText"></h2>
+            <h2 id="wonGame"></h2>
+        </div>
+        <div class="score">
+            <h3>Player Score: <span id="playerScore">0</span></h3>
+            <h3>Computer Score: <span id="computerScore">0</span></h3>
+        </div>
+        <div class="reset">
+            <button id="reset">Reset</button>
+        </div>
     </div>
 </body>
 </html>
