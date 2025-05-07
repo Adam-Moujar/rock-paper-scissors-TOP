@@ -1,8 +1,8 @@
 // script.js
 
-let playerScore = 4;
-let computerScore = 4;
-const winningScore = 5; 
+let playerScore = 0;
+let computerScore = 0;
+const winningScore = 5;
 
 const choices = ['rock', 'paper', 'scissors'];
 
@@ -79,7 +79,7 @@ function endGame(winner) {
     resetButton.disabled = false;
 }
 
-function resetGame(){
+function resetGame() {
     playerScore = 0;
     computerScore = 0;
     playerScoreText.textContent = playerScore;
